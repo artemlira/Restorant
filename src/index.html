@@ -1,13 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 @@include('html/head.html', {
-"title":"Главная"
+"title":"Restorant"
 })
 
 <body>
-   @@include('html/header.html',{})
-   @@include('html/footer.html',{})
-   <script src="js/app.min.js"></script>
+   <div class="wrapper">
+      @@include('html/header.html',{})
+      @@include('html/about.html',{})
+      @@include('html/ingredients.html',{})
+      @@include('html/menu.html',{})
+      @@include('html/reviews.html',{})
+      @@include('html/reservation.html',{})
+      @@include('html/footer.html',{})
+   </div>
+   @@include('html/js.html', {})
 </body>
 
 </html>

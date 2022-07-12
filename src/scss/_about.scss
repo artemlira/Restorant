@@ -1,0 +1,30 @@
+.about {
+   width: 100%;
+   max-width: $maxWidth;
+   min-height: 750px;
+   background-image: url(../svgicons/pattern.png);
+   background-color: $lightGray;
+
+}
+
+.about__contant {
+   width: 1069px;
+   // width: 100%;
+   margin: 0 auto;
+   height: 100%;
+   padding: 100px 75px;
+   display: flex;
+   justify-content: space-evenly;
+}
+
+.left__contant {
+   border: 1px solid green;
+}
+
+.right__contant {
+   border: 1px solid;
+}
+
+.right__contant img {
+   height: 100%;
+}

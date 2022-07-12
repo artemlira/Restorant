@@ -1,1 +1,26 @@
 @import "fonts";
+@import "variables";
+@import "global";
+@import "header";
+@import "about";
+@import "ingradients";
+@import "menu";
+@import "reviews";
+@import "reservation";
+@import "footer";
+
+
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+
+body {
+   font-family: $fontFamily;
+   font-style: normal;
+   line-height: 150%;
+   max-width: $maxWidth;
+}
+
+.wrapper {}

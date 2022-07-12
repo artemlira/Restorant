@@ -1,0 +1,40 @@
+.header {
+   width: 100%;
+   max-width: $maxWidth;
+   min-height: 750px;
+   background: url(../img/pic1.png) no-repeat;
+}
+
+// .header__content {}
+
+.container {
+   max-width: 1069px;
+   margin: 0 auto;
+   height: 100%;
+   border: 1px solid;
+}
+
+h1 {
+   font-family: YesevaOne;
+   font-size: 90px;
+   font-weight: 400;
+   color: $white;
+   text-align: center;
+   line-height: 100%;
+   text-shadow: 2px 2px 0 #000;
+}
+
+.header__title {
+   height: 187px;
+   margin: 212px auto 0;
+}
+
+.header__icon {
+   width: 250px;
+   height: 50px;
+   margin: 100px auto;
+}
+
+
+
+// .header__buttons {}
