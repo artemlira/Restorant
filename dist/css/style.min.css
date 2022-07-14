@@ -1,17 +1,5 @@
-@font-face {
-  font-family: Lato;
-  font-display: swap;
-  src: url("../fonts/Lato-Regular.woff2") format("woff2"), url("../fonts/Lato-Regular.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: YesevaOne;
-  font-display: swap;
-  src: url("../fonts/YesevaOne-Regular.woff2") format("woff2"), url("../fonts/YesevaOne-Regular.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-}
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap");
 .header {
   width: 100%;
   max-width: 1440px;
@@ -23,7 +11,7 @@
   max-width: 1069px;
   margin: 0 auto;
   height: 100%;
-  border: 1px solid;
+  border: 1px solid rgba(0, 0, 0, 0);
 }
 
 h1 {
@@ -47,33 +35,121 @@ h1 {
   margin: 100px auto;
 }
 
+.btn {
+  width: 13.625rem;
+  height: 5rem;
+  background-color: rgba(255, 255, 255, 0.651);
+  text-align: center;
+  color: #FFFFFF;
+  text-decoration: none;
+  padding: 1.8rem;
+  margin-bottom: 6.3rem;
+}
+
+.btn:hover {
+  background-color: rgb(197, 197, 197);
+}
+
+.header__buttons {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-content: center;
+  gap: 2rem;
+}
+
 .about {
   width: 100%;
   max-width: 1440px;
   min-height: 750px;
   background-image: url(../svgicons/pattern.png);
-  background-color: #9B9B9B;
+  padding: 100px 75px;
+}
+
+.about h2 {
+  font-family: Yeseva One;
+  font-size: 2rem;
+  font-weight: 400;
+  color: #CC9900;
+  margin-bottom: 1.5rem;
+}
+
+.about p {
+  margin: 1rem 0;
 }
 
 .about__contant {
-  width: 1069px;
+  max-width: 1211px;
+  max-height: 551px;
   margin: 0 auto;
   height: 100%;
-  padding: 100px 75px;
   display: flex;
   justify-content: space-evenly;
+  gap: 100px;
 }
 
 .left__contant {
-  border: 1px solid green;
-}
-
-.right__contant {
-  border: 1px solid;
+  text-align: center;
 }
 
 .right__contant img {
   height: 100%;
+}
+
+.ingradiens {
+  width: 100%;
+  max-width: 1440px;
+  min-height: 750px;
+  background: url(../img/bg1.png) 0 0 no-repeat;
+  display: flex;
+  justify-content: right;
+  padding: 100px 75px;
+  color: #FFFFFF;
+}
+
+.ingradiens__contant {
+  max-width: 630px;
+  height: 100%;
+  min-height: 550px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.ingradiens__contant h2 {
+  font-family: Yeseva One;
+  font-size: 2rem;
+  font-weight: 400;
+  margin: 3.12rem 0 2.5rem 0;
+}
+
+.ingradiens__contant p {
+  margin: 1.6rem 5rem 3.12rem;
+}
+
+.ingradients__text {
+  flex: 1 0 auto;
+}
+
+.ingradiens__icons {
+  display: flex;
+  gap: 28px;
+  margin-bottom: 4.3rem;
+}
+
+.ingradiens__icon {
+  width: 115px;
+  height: 115px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 5px solid rgba(204, 153, 0, 0.5019607843);
+}
+
+.ingradiens__icon img {
+  height: 100%;
+  object-fit: none;
 }
 
 * {
@@ -84,7 +160,12 @@ h1 {
 
 body {
   font-family: "Lato";
-  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
   line-height: 150%;
   max-width: 1440px;
+}
+
+.wrapper {
+  position: relative;
 }

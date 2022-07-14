@@ -3,27 +3,37 @@
    max-width: $maxWidth;
    min-height: 750px;
    background-image: url(../svgicons/pattern.png);
-   background-color: $lightGray;
+   padding: 100px 75px;
 
+}
+
+.about h2 {
+   font-family: Yeseva One;
+   font-size: 2rem;
+   font-weight: 400;
+   color: $mustard;
+   margin-bottom: 1.5rem;
+}
+
+.about p {
+   margin: 1rem 0;
 }
 
 .about__contant {
-   width: 1069px;
-   // width: 100%;
+   max-width: 1211px;
+   max-height: 551px;
    margin: 0 auto;
    height: 100%;
-   padding: 100px 75px;
    display: flex;
    justify-content: space-evenly;
+   gap: 100px;
 }
 
 .left__contant {
-   border: 1px solid green;
+   text-align: center;
 }
 
-.right__contant {
-   border: 1px solid;
-}
+.right__contant {}
 
 .right__contant img {
    height: 100%;

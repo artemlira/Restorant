@@ -1,4 +1,6 @@
-@import "fonts";
+// @import "fonts";
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
 @import "variables";
 @import "global";
 @import "header";
@@ -18,9 +20,12 @@
 
 body {
    font-family: $fontFamily;
-   font-style: normal;
+   font-weight: 400;
+   font-size: 1rem;
    line-height: 150%;
    max-width: $maxWidth;
 }
 
-.wrapper {}
+.wrapper {
+   position: relative;
+}
