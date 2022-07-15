@@ -1,0 +1,42 @@
+.reviews {
+   width: 100%;
+   max-width: $maxWidth;
+   min-height: 750px;
+   background: url(../img/bg2.png) 0 0 no-repeat;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 100px 0;
+   color: $white;
+   text-align: center;
+}
+
+.reviews h2 {
+   font-family: Yeseva One;
+   font-size: 2rem;
+   font-weight: 400;
+   color: $white;
+   margin: 4rem 0;
+}
+
+.reviews p {
+   font-family: Gentium Book Basic;
+   font-weight: bold;
+   font-size: 1.5rem;
+   line-height: 150%;
+   margin: 4.37rem 5rem;
+}
+
+.reviews span {
+   font-family: $fontFamily;
+   font-weight: 400;
+   font-size: 1.25rem;
+   margin-top: 4.37rem;
+}
+
+.reviews__contant {
+   max-width: 850px;
+   height: 100%;
+   min-height: 550px;
+   background-color: #000000CC;
+}
