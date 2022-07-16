@@ -45,8 +45,6 @@
    gap: 1.87rem;
 }
 
-.image {}
-
 .image img {
    height: 100%;
 }
@@ -59,4 +57,48 @@
 form {
    max-width: 410px;
    min-height: 200px;
+   margin: 0 auto;
+}
+
+.form__cells {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   row-gap: 21px;
+   column-gap: 30px;
+   text-align: left;
+}
+
+.form {
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+   height: 100%;
+   width: 100%;
+}
+
+label {
+   color: $mustard;
+}
+
+input {
+   height: 2rem;
+   width: 100%;
+}
+
+.reservation__buttons {
+   height: 2rem;
+   width: 11.87rem;
+   background-color: $mustard;
+   margin: 2rem auto;
+}
+
+.reservation__buttons:hover {
+   background-color: rgb(95, 63, 21);
+}
+
+.reservation__btn {
+   text-decoration: none;
+   text-align: center;
+   color: $white;
+   padding: 0.4rem 3rem;
 }
