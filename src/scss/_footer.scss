@@ -1,7 +1,7 @@
 .footer {
    width: 100%;
    max-width: $maxWidth;
-   min-height: 375px;
+   min-height: rem(375px);
    background: #000000;
    opacity: 0.75;
    padding: 3.12rem 4.37rem;
@@ -10,8 +10,8 @@
 .footer__container {
    display: grid;
    grid-template-columns: 1fr 1fr 1fr;
-   gap: 30px;
-   min-height: 275px;
+   gap: rem(30px);
+   min-height: rem(275px);
 }
 
 .footer h3 {
@@ -26,19 +26,29 @@
    color: $white;
 }
 
+.footer span,
+.adress__text {
+   font-family: 'Lato';
+   font-style: normal;
+   font-weight: 700;
+   font-size: 16px;
+   line-height: 29px;
+}
+
 .footer__about,
 .footer__timetable,
 .footer__adress {
    text-align: center;
    display: grid;
    grid-template-rows: 1fr 2fr;
-   gap: 55px;
+   gap: rem(55px);
 }
 
 .timetable__text {
    display: flex;
    flex-direction: column;
 }
+
 
 .text {
    flex: 1 0 auto;

@@ -1,15 +1,38 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Gentium+Book+Basic:wght@700&display=swap");
+.about,
+.ingradiens,
+.reservation,
+.reviews {
+  width: 100%;
+  max-width: 1440px;
+  min-height: 46.875rem;
+  padding: 6.25rem 4.6875rem;
+}
+@media screen and (max-width: 992px) {
+  .about,
+.ingradiens,
+.reservation,
+.reviews {
+    padding: 1.875rem 1.25rem;
+  }
+}
+
 .header {
   width: 100%;
   max-width: 1440px;
-  min-height: 750px;
+  min-height: 46.875rem;
   background: url(../img/pic1.png) no-repeat;
+}
+@media screen and (max-width: 768px) {
+  .header {
+    max-width: 767.98px;
+  }
 }
 
 .container {
-  max-width: 1069px;
+  max-width: 66.8125rem;
   margin: 0 auto;
   height: 100%;
   border: 1px solid rgba(0, 0, 0, 0);
@@ -17,7 +40,7 @@
 
 h1 {
   font-family: YesevaOne;
-  font-size: 5.62rem;
+  font-size: 5.625rem;
   font-weight: 400;
   color: #FFFFFF;
   text-align: center;
@@ -26,14 +49,24 @@ h1 {
 }
 
 .header__title {
-  height: 187px;
-  margin: 212px auto 0;
+  height: 11.6875rem;
+  margin: 13.25rem auto 0;
 }
 
 .header__icon {
-  width: 250px;
-  height: 50px;
-  margin: 100px auto;
+  width: 15.625rem;
+  height: 3.125rem;
+  margin: 6.25rem auto;
+}
+.header__icon svg {
+  width: 100%;
+  height: 100%;
+}
+@media screen and (max-width: 768px) {
+  .header__icon {
+    width: 20.9375rem;
+    height: 3.875rem;
+  }
 }
 
 .btn {
@@ -45,6 +78,13 @@ h1 {
   text-decoration: none;
   padding: 1.8rem;
   margin-bottom: 6.3rem;
+}
+@media screen and (max-width: 768px) {
+  .btn {
+    width: 100%;
+    height: 5rem;
+    margin: 0;
+  }
 }
 
 .btn:hover {
@@ -58,13 +98,17 @@ h1 {
   align-content: center;
   gap: 2rem;
 }
+@media screen and (max-width: 768px) {
+  .header__buttons {
+    width: 20.9375rem;
+    height: 12.5rem;
+    margin: 0 auto 6.25rem;
+    flex-direction: column;
+  }
+}
 
 .about {
-  width: 100%;
-  max-width: 1440px;
-  min-height: 750px;
   background: linear-gradient(270deg, #F4F2F2 18.35%, #FFFFFF 84.09%);
-  padding: 100px 75px;
   box-shadow: inset 0px 4px 40px rgba(0, 0, 0, 0.1);
   position: relative;
 }
@@ -94,42 +138,74 @@ h1 {
 }
 
 .about__contant {
-  max-width: 1211px;
-  max-height: 551px;
+  max-width: 75.6875rem;
+  max-height: 34.4375rem;
   margin: 0 auto;
   height: 100%;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   justify-content: space-evenly;
-  gap: 100px;
+  gap: 6.25rem;
+}
+@media screen and (max-width: 992px) {
+  .about__contant {
+    gap: 3.125rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .about__contant {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
 }
 
 .left__contant {
   text-align: center;
 }
+@media screen and (max-width: 768px) {
+  .left__contant {
+    width: 25.625rem;
+    grid-template-columns: 1fr;
+    margin: 0 auto;
+  }
+  .left__contant img {
+    width: 18.125rem;
+    height: 18.125rem;
+  }
+  .left__contant svg {
+    width: 15.625rem;
+    height: 1.5625rem;
+  }
+}
 
 .right__contant {
   z-index: 10;
 }
-
 .right__contant img {
-  height: 100%;
+  max-height: 100%;
+}
+@media screen and (max-width: 992px) {
+  .right__contant img {
+    height: 70%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .right__contant {
+    display: none;
+  }
 }
 
 .ingradiens {
-  width: 100%;
-  max-width: 1440px;
-  min-height: 750px;
   background: url(../img/bg1.png) 0 0 no-repeat;
   display: flex;
   justify-content: right;
-  padding: 100px 75px;
   color: #FFFFFF;
 }
 
 .ingradiens__contant {
-  max-width: 630px;
+  max-width: 39.375rem;
   height: 100%;
-  min-height: 550px;
+  min-height: 34.375rem;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -154,13 +230,13 @@ h1 {
 
 .ingradiens__icons {
   display: flex;
-  gap: 28px;
+  gap: 1.75rem;
   margin-bottom: 4.3rem;
 }
 
 .ingradiens__icon {
-  width: 115px;
-  height: 115px;
+  width: 7.1875rem;
+  height: 7.1875rem;
   border-radius: 50%;
   overflow: hidden;
   border: 5px solid rgba(204, 153, 0, 0.5019607843);
@@ -172,8 +248,8 @@ h1 {
 }
 
 .menu {
-  max-width: 1440px;
-  min-height: 1125px;
+  max-width: 90rem;
+  min-height: 70.3125rem;
   box-shadow: inset 0px 4px 40px rgba(0, 0, 0, 0.1);
   background: linear-gradient(270deg, #FFFFFF 18.35%, #F3F1F1 84.09%);
   position: relative;
@@ -221,13 +297,19 @@ hr {
 .menu__container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 30px;
-  padding: 100px 75px;
+  gap: 1.875rem;
+  padding: 6.25rem 4.6875rem;
   text-align: center;
+}
+@media screen and (max-width: 992px) {
+  .menu__container {
+    grid-template-columns: 1fr;
+    padding: 1.875rem 1.25rem;
+  }
 }
 
 .menu__item {
-  padding: 30px 75px;
+  padding: 1.875rem 4.6875rem;
 }
 
 .title {
@@ -236,14 +318,10 @@ hr {
 }
 
 .reviews {
-  width: 100%;
-  max-width: 1440px;
-  min-height: 750px;
   background: url(../img/bg2.png) 0 0 no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 100px 0;
   color: #FFFFFF;
   text-align: center;
 }
@@ -272,18 +350,14 @@ hr {
 }
 
 .reviews__contant {
-  max-width: 850px;
+  max-width: 53.125rem;
   height: 100%;
-  min-height: 550px;
+  min-height: 34.375rem;
   background-color: rgba(0, 0, 0, 0.8);
 }
 
 .reservation {
-  width: 100%;
-  max-width: 1440px;
-  min-height: 750px;
   background: linear-gradient(270deg, #F4F2F2 18.35%, #FFFFFF 84.09%);
-  padding: 100px 75px;
   box-shadow: inset 0px 4px 40px rgba(0, 0, 0, 0.1);
   position: relative;
 }
@@ -310,41 +384,67 @@ hr {
 }
 
 .reservation__container {
-  max-width: 1211px;
-  max-height: 551px;
+  max-width: 75.6875rem;
+  max-height: 34.4375rem;
   margin: 0 auto;
   height: 100%;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   justify-content: space-evenly;
   gap: 1.87rem;
 }
+@media screen and (max-width: 992px) {
+  .reservation__container {
+    grid-template-columns: 1fr;
+    justify-content: center;
+    gap: 0;
+  }
+}
 
 .reservation__images {
-  max-width: 630px;
-  display: flex;
-  gap: 1.87rem;
+  max-width: 39.375rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.875rem;
+}
+@media screen and (max-width: 992px) {
+  .reservation__images {
+    display: none;
+  }
 }
 
-.image img {
-  height: 100%;
+@media screen and (max-width: 1100px) {
+  .image img {
+    height: 80%;
+  }
 }
-
 .reservation__text {
   text-align: center;
-  max-width: 630px;
+  max-width: 39.375rem;
+  min-width: 31.25rem;
+}
+@media screen and (max-width: 1100px) {
+  .reservation__text {
+    margin-left: 1rem;
+  }
+}
+@media screen and (max-width: 992px) {
+  .reservation__text {
+    margin: 0 auto;
+  }
 }
 
 form {
-  max-width: 410px;
-  min-height: 200px;
+  max-width: 25.625rem;
+  min-height: 12.5rem;
   margin: 0 auto;
 }
 
 .form__cells {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  row-gap: 21px;
-  column-gap: 30px;
+  row-gap: 1.3125rem;
+  column-gap: 1.875rem;
   text-align: left;
 }
 
@@ -352,11 +452,14 @@ form {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  height: 100%;
-  width: 100%;
 }
 
 label {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 25px;
   color: #CC9900;
 }
 
@@ -386,7 +489,7 @@ input {
 .footer {
   width: 100%;
   max-width: 1440px;
-  min-height: 375px;
+  min-height: 23.4375rem;
   background: #000000;
   opacity: 0.75;
   padding: 3.12rem 4.37rem;
@@ -395,8 +498,8 @@ input {
 .footer__container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 30px;
-  min-height: 275px;
+  gap: 1.875rem;
+  min-height: 17.1875rem;
 }
 
 .footer h3 {
@@ -411,13 +514,22 @@ input {
   color: #FFFFFF;
 }
 
+.footer span,
+.adress__text {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 29px;
+}
+
 .footer__about,
 .footer__timetable,
 .footer__adress {
   text-align: center;
   display: grid;
   grid-template-rows: 1fr 2fr;
-  gap: 55px;
+  gap: 3.4375rem;
 }
 
 .timetable__text {
@@ -441,6 +553,7 @@ body {
   font-size: 1rem;
   line-height: 150%;
   max-width: 1440px;
+  margin: 0 auto;
 }
 
 .wrapper {

@@ -1,6 +1,6 @@
 .menu {
-   max-width: 1440px;
-   min-height: 1125px;
+   max-width: rem(1440px);
+   min-height: rem(1125px);
    box-shadow: inset 0px 4px 40px rgba(0, 0, 0, 0.1);
    background: linear-gradient(270deg, #FFFFFF 18.35%, #F3F1F1 84.09%);
    position: relative;
@@ -48,13 +48,18 @@ hr {
 .menu__container {
    display: grid;
    grid-template-columns: 1fr 1fr;
-   gap: 30px;
-   padding: 100px 75px;
+   gap: rem(30px);
+   padding: rem(100px) rem(75px);
    text-align: center;
+
+   @include big {
+      grid-template-columns: 1fr;
+      padding: rem(30px) rem(20px);
+   }
 }
 
 .menu__item {
-   padding: 30px 75px;
+   padding: rem(30px) rem(75px);
 }
 
 .title {

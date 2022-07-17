@@ -1,0 +1,13 @@
+.about,
+.ingradiens,
+.reservation,
+.reviews {
+   width: 100%;
+   max-width: $maxWidth;
+   min-height: rem(750px);
+   padding: rem(100px) rem(75px);
+
+   @include big {
+      padding: rem(30px) rem(20px);
+   }
+}

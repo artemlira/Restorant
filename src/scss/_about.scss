@@ -1,9 +1,5 @@
 .about {
-   width: 100%;
-   max-width: $maxWidth;
-   min-height: 750px;
    background: linear-gradient(270deg, #F4F2F2 18.35%, #FFFFFF 84.09%);
-   padding: 100px 75px;
    box-shadow: inset 0px 4px 40px rgba(0, 0, 0, 0.1);
    position: relative;
 }
@@ -33,24 +29,59 @@
 }
 
 .about__contant {
-   max-width: 1211px;
-   max-height: 551px;
+   max-width: rem(1211px);
+   max-height: rem(551px);
    margin: 0 auto;
    height: 100%;
-   display: flex;
+   display: grid;
+   grid-template-columns: 1fr 1fr;
    justify-content: space-evenly;
-   gap: 100px;
+   gap: rem(100px);
+
+   @include big {
+      gap: rem(50px);
+   }
+
+   @include tablet {
+      grid-template-columns: 1fr;
+      gap: 0;
+   }
 }
 
 .left__contant {
    text-align: center;
+
+   @include tablet {
+      width: rem(410px);
+      grid-template-columns: 1fr;
+      margin: 0 auto;
+
+      & img {
+         width: rem(290px);
+         height: rem(290px);
+      }
+
+      & svg {
+         width: rem(250px);
+         height: rem(25px);
+      }
+   }
 }
 
 .right__contant {
    z-index: 10;
-}
 
-.right__contant img {
-   height: 100%;
+   & img {
+      max-height: 100%;
+   }
 
+   @include big {
+      & img {
+         height: 70%;
+      }
+   }
+
+   @include tablet {
+      display: none;
+   }
 }
