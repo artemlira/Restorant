@@ -3,6 +3,11 @@
    display: flex;
    justify-content: right;
    color: $white;
+
+   @include tablet {
+      justify-content: center;
+      align-items: center;
+   }
 }
 
 .ingradiens__contant {
@@ -15,6 +20,9 @@
    align-items: center;
    background-color: #000000CC;
 
+   @include phone {
+      width: auto;
+   }
 }
 
 .ingradiens__contant h2 {
@@ -26,6 +34,10 @@
 
 .ingradiens__contant p {
    margin: 1.6rem 5rem 3.12rem;
+
+   @include phone {
+      margin: 1.6rem 2rem 3.12rem;
+   }
 }
 
 .ingradients__text {
@@ -36,6 +48,11 @@
    display: flex;
    gap: rem(28px);
    margin-bottom: 4.3rem;
+
+   @include phone {
+      width: auto;
+      gap: rem(15px);
+   }
 }
 
 .ingradiens__icon {

@@ -52,7 +52,7 @@ hr {
    padding: rem(100px) rem(75px);
    text-align: center;
 
-   @include big {
+   @include notepad {
       grid-template-columns: 1fr;
       padding: rem(30px) rem(20px);
    }

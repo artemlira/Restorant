@@ -2,10 +2,18 @@
    width: 100%;
    max-width: $maxWidth;
    min-height: rem(750px);
-   background: url(../img/pic1.png) no-repeat;
+   background-image: url(../img/pic1.png);
+   background-repeat: no-repeat;
+   background-size: cover;
 
    @include tablet {
       max-width: $md3;
+      padding: rem(30px);
+      height: rem(1024px);
+   }
+
+   @include phone {
+      max-width: $md4;
    }
 }
 
@@ -17,16 +25,23 @@
    height: 100%;
 
    border: 1px solid rgba(0, 0, 0, 0);
+
+   @include tablet {}
 }
 
 h1 {
    font-family: YesevaOne;
    font-size: rem(90px);
-   font-weight: 400;
+   font-weight: 600;
    color: $white;
    text-align: center;
    line-height: 100%;
    text-shadow: 2px 2px 0 #000;
+
+   @include phone {
+      font-size: rem(45px);
+   }
+
 
 }
 
@@ -34,12 +49,25 @@ h1 {
    height: rem(187px);
 
    margin: rem(212px) auto 0;
+
+   @include tablet {
+      margin-bottom: rem(20px);
+      height: auto;
+   }
 }
 
 .header__icon {
    width: rem(250px);
    height: rem(50px);
    margin: rem(100px) auto;
+
+   @include tablet {
+      margin: rem(20px) auto rem(60px);
+   }
+
+   @include phone {
+      width: initial !important;
+   }
 
    & svg {
       width: 100%;
@@ -88,5 +116,10 @@ h1 {
       height: rem(200px);
       margin: 0 auto rem(100px);
       flex-direction: column;
+   }
+
+   @include phone {
+      width: auto;
+      max-width: $md4;
    }
 }

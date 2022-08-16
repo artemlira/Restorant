@@ -24,7 +24,17 @@ $md4: 479.98px;
    @return $size / $root-font-size * 1rem;
 }
 
-@mixin big {
+@function pr($sizeBox , $size) {
+   @return $size/$sizeBox*100%;
+}
+
+@mixin notebook {
+   @media screen and (max-width:1260px) {
+      @content;
+   }
+}
+
+@mixin notepad {
    @media screen and (max-width:992px) {
       @content;
    }
@@ -32,6 +42,12 @@ $md4: 479.98px;
 
 @mixin tablet {
    @media screen and (max-width:768px) {
+      @content;
+   }
+}
+
+@mixin phone {
+   @media screen and (max-width:480px) {
       @content;
    }
 }

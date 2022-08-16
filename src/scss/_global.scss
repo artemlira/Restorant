@@ -7,7 +7,7 @@
    min-height: rem(750px);
    padding: rem(100px) rem(75px);
 
-   @include big {
+   @include notepad {
       padding: rem(30px) rem(20px);
    }
 }
