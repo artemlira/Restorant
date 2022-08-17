@@ -8,6 +8,10 @@
       justify-content: center;
       align-items: center;
    }
+
+   @include phone {
+      width: 100%;
+   }
 }
 
 .ingradiens__contant {
@@ -21,7 +25,7 @@
    background-color: #000000CC;
 
    @include phone {
-      width: auto;
+      width: 90%;
    }
 }
 
@@ -36,12 +40,16 @@
    margin: 1.6rem 5rem 3.12rem;
 
    @include phone {
-      margin: 1.6rem 2rem 3.12rem;
+      margin: rem(25px) rem(5px);
    }
 }
 
 .ingradients__text {
    flex: 1 0 auto;
+
+   @include phone {
+      width: 100%;
+   }
 }
 
 .ingradiens__icons {
@@ -50,8 +58,8 @@
    margin-bottom: 4.3rem;
 
    @include phone {
-      width: auto;
-      gap: rem(15px);
+      width: 100%;
+      gap: rem(7px);
    }
 }
 

@@ -5,6 +5,11 @@
    background: #000000;
    opacity: 0.75;
    padding: 3.12rem 4.37rem;
+
+   @include phone {
+      min-height: initial;
+      padding: 0 rem(20px);
+   }
 }
 
 .footer__container {
@@ -12,6 +17,12 @@
    grid-template-columns: 1fr 1fr 1fr;
    gap: rem(30px);
    min-height: rem(275px);
+
+   @include phone {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(3, auto);
+      min-height: initial;
+   }
 }
 
 .footer h3 {
@@ -20,6 +31,10 @@
    font-size: 1.3rem;
    font-weight: 400;
    color: $white;
+
+   @include phone {
+      margin-top: rem(10px);
+   }
 }
 
 .footer p {
@@ -42,6 +57,11 @@
    display: grid;
    grid-template-rows: 1fr 2fr;
    gap: rem(55px);
+
+   @include phone {
+      grid-template-rows: 1fr 1fr;
+      gap: rem(10px);
+   }
 }
 
 .timetable__text {
@@ -52,4 +72,8 @@
 
 .text {
    flex: 1 0 auto;
+
+   @include phone {
+      flex: 0 0;
+   }
 }

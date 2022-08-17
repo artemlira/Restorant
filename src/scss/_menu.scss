@@ -60,6 +60,10 @@ hr {
 
 .menu__item {
    padding: rem(30px) rem(75px);
+
+   @include phone {
+      padding: rem(30px) 0;
+   }
 }
 
 .title {

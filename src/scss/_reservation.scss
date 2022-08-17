@@ -2,6 +2,10 @@
    background: linear-gradient(270deg, #F4F2F2 18.35%, #FFFFFF 84.09%);
    box-shadow: inset 0px 4px 40px rgba(0, 0, 0, 0.1);
    position: relative;
+
+   @include phone {
+      height: auto;
+   }
 }
 
 .reservation::after {
@@ -40,6 +44,11 @@
       justify-content: center;
       gap: 0;
    }
+
+   @include phone {
+      max-height: initial;
+      height: auto;
+   }
 }
 
 .reservation__images {
@@ -70,6 +79,15 @@
 
    @include notepad {
       margin: 0 auto;
+   }
+
+   @include phone {
+      width: auto;
+      min-width: initial;
+
+      p {
+         padding: 0;
+      }
    }
 }
 
