@@ -143,21 +143,10 @@ h1 {
 }
 
 .about {
-  background: linear-gradient(270deg, #F4F2F2 18.35%, #FFFFFF 84.09%);
+  background-image: linear-gradient(270deg, #F4F2F2 18.35%, #FFFFFF 84.09%), url(../img/pattern.png);
+  background-blend-mode: hard-light;
   box-shadow: inset 0px 4px 40px rgba(0, 0, 0, 0.1);
   position: relative;
-}
-
-.about::after {
-  content: "";
-  background: url(../img/pattern.png);
-  opacity: 0.02;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  position: absolute;
-  z-index: 2;
 }
 
 .about h2 {
@@ -323,20 +312,9 @@ h1 {
   max-width: 90rem;
   min-height: 70.3125rem;
   box-shadow: inset 0px 4px 40px rgba(0, 0, 0, 0.1);
-  background: linear-gradient(270deg, #FFFFFF 18.35%, #F3F1F1 84.09%);
+  background-image: linear-gradient(270deg, #FFFFFF 18.35%, #F3F1F1 84.09%), url(../img/pattern1.png);
+  background-blend-mode: hard-light;
   position: relative;
-}
-
-.menu::after {
-  content: "";
-  background: url(../img/pattern1.png);
-  opacity: 0.02;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  position: absolute;
-  z-index: 2;
 }
 
 h3,
@@ -446,26 +424,14 @@ hr {
 }
 
 .reservation {
-  background: linear-gradient(270deg, #F4F2F2 18.35%, #FFFFFF 84.09%);
+  background: linear-gradient(270deg, #F4F2F2 18.35%, #FFFFFF 84.09%), url(../img/pattern.png);
+  background-blend-mode: hard-light;
   box-shadow: inset 0px 4px 40px rgba(0, 0, 0, 0.1);
-  position: relative;
 }
 @media screen and (max-width: 480px) {
   .reservation {
     height: auto;
   }
-}
-
-.reservation::after {
-  content: "";
-  background: url(../img/pattern.png);
-  opacity: 0.02;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  position: absolute;
-  z-index: 2;
 }
 
 .reservation h3 {
